@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Clear "canvas"</title>
+</head>
+
+<body onload="main()">
+  <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+  </canvas>
+
+  <script src="asgn0.js"></script>
+  <script src="../lib/cuon-matrix-cse160.js"></script>
+
+  <br></br>
+  <span>V1:</span>
+  <label for="v1x">x</label>
+  <input type="number" id="v1x" name="v1x">
+  <label for="v1y">y</label>
+  <input type="number" id="v1y" name="v1y">
+
+  <br></br>
+  <span>V2:</span>
+  <label for="v2x">x</label>
+  <input type="number" id="v2x" name="v2x">
+  <label for="v2y">y</label>
+  <input type="number" id="v2y" name="v2y">
+
+  <input type="button" value="Draw" onclick="handleDrawEvent()"></input>
+
+  <br></br>
+  <br></br>
+  <label for="operations">Operation:</label>
+  <select name="operations" id="operations">
+    <option value="add">Add</option>
+    <option value="sub">Subtract</option>
+    <option value="mul">Multiply</option>
+    <option value="div">Divide</option>
+    <option value="mag">Magnitude</option>
+    <option value="nor">Normalize</option>
+    <option value="angle">Angle Between</option>
+    <option value="area">Area</option>
+  </select>
+
+  <label for="scalar">Scalar:</label>
+  <input type="number" id="scalar" name="scalar">
+  <input type="button" value="Draw" onclick="handleDrawOperationEvent()"></input>
+
+  <br></br>
+  <br></br>
+  <hr>
+  <p>Name: Jiayi Hu</p>
+  <p>ucsc email: jhu343@ucsc.edu</p>
+
+</body>
+
+</html>
