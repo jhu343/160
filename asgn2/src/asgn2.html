@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>CSE160 Asgn2</title>
+</head>
+
+<body onload="main()">
+  <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+  </canvas>
+
+  <p>
+
+  <p id="numdot">number of dot: 0 ms: 0 fps: 0</p>
+
+  <p>
+    Animation:
+    <button type="button" id="animationOnButton">ON</button>
+    <button type="button" id="animationOffButton">OFF</button>
+
+    Follow Cursor:
+    <button type="button" id="followOnButton">ON</button>
+    <button type="button" id="followOffButton">OFF</button>
+  <p>
+    Head <input type="range" min="-15" max="15" value="0" class="slider" id="headSlide">
+    Mouth <input type="range" min="-15" max="15" value="0" class="slider" id="mouthSlide">
+
+  <p>
+    <b><u>Left Legs:</u></b>
+  <p>
+    Front Top <input type="range" min="-15" max="15" value="0" class="slider" id="leftFrontLegTopSlide">
+    Front Bottom <input type="range" min="-15" max="15" value="0" class="slider" id="leftFrontLegBottomSlide">
+  <p>
+    Back Top <input type="range" min="-15" max="15" value="0" class="slider" id="leftBackLegTopSlide">
+    Back Bottom <input type="range" min="-15" max="15" value="0" class="slider" id="leftBackLegBottomSlide">
+
+  <p>
+    <b><u>Right Legs:</u></b>
+  <p>
+    Front Top <input type="range" min="-15" max="15" value="0" class="slider" id="rightFrontLegTopSlide">
+    Front Bottom <input type="range" min="-15" max="15" value="0" class="slider" id="rightFrontLegBottomSlide">
+  <p>
+    Back Top <input type="range" min="-15" max="15" value="0" class="slider" id="rightBackLegTopSlide">
+    Back Bottom <input type="range" min="-15" max="15" value="0" class="slider" id="rightBackLegBottomSlide">
+  <p>
+    <b><u>Tail:</u></b>
+    Left & Right <input type="range" min="-15" max="15" value="0" class="slider" id="tailLRSlide">
+    Front & Back <input type="range" min="-15" max="15" value="0" class="slider" id="tailFBSlide">
+  
+
+  <p>
+    <b><u>LeftEye:</u></b>
+    Open <input type="range" min="0" max="50" value="50" class="slider" id="leftEyeCloseSlide">
+    Up & Down <input type="range" min="0" max="50" value="0" class="slider" id="leftEyeUDSlide">
+    Left & Right <input type="range" min="-25" max="25" value="0" class="slider" id="leftEyeLRSlide">
+
+  <p>
+    <b><u>RightEye:</u></b>
+    Open <input type="range" min="0" max="50" value="50" class="slider" id="rightEyeCloseSlide">
+    Up & Down <input type="range" min="0" max="50" value="0" class="slider" id="rightEyeUDSlide">
+    Left & Right <input type="range" min="-25" max="25" value="0" class="slider" id="rightEyeLRSlide">
+
+    <br>
+    <br>
+    <hr>
+  <p>Jiayi Hu</p>
+  <p>jhu343@ucsc.edu</p>
+  <p>Notes:
+  <ul>
+    <li>shift + click: Dog will get scared and become sad if being poked.
+      But you can turn him back NOT sad by poking him again.</li>
+    <li>Dog's eyes will chase your mouse.
+      It can be turned on/off with the Follow Cursor buttons.</li>
+    <li>Non-Cube Primitive: the ground is a white disk</li>
+    <li>Turn off "Animation" to use sliders for left legs, right legs, and tail</li>
+    <li>Turn off "Follow Cursor" to use sliders for left and right eyes</li>
+  </ul>
+  </p>
+  <p>
+    <script src="../lib/cuon-matrix-cse160.js"></script>
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Disk.js"></script>
+    <script src="Cube.js"></script>
+    <script src="BlockyAnimal.js"></script>
+</body>
+
+</html>
