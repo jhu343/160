@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>CSE160 Asgn3</title>
+</head>
+
+<body onload="main()">
+  <div style="display: flex;">
+    <div style="padding: 5px;">
+      <canvas id="webgl" width="800" height="800">
+        Please use a browser that supports "canvas"
+      </canvas>
+      <p id="numdot">number of dot: 0 ms: 0 fps: 0</p>
+    </div>
+    <div style="padding: 5px;">
+      <p>Jiayi Hu</p>
+      <p>jhu343@ucsc.edu</p>
+      <hr>
+      <p>Notes:
+      <ul>
+        <li>Solve the maze and find the dog!</li>
+        <li>- Move -
+          <ul>
+            <li>W: forward</li>
+            <li>S: backward</li>
+            <li>A: left</li>
+            <li>D: right</li>
+            <li>Z: upward</li>
+            <li>X: downward</li>
+          </ul>
+        </li>
+        <li>- Camera -
+          <ul>
+            <li>Q: turn left</li>
+            <li>E: turn right</li>
+            <li>R: turn upward</li>
+            <li>F: turn downward</li>
+            (or just dragging with mouse)
+          </ul>
+        </li>
+      </ul>
+      </p>
+    </div>
+  </div>
+
+  <script src="../lib/cuon-matrix-cse160.js"></script>
+  <script src="../lib/webgl-utils.js"></script>
+  <script src="../lib/webgl-debug.js"></script>
+  <script src="../lib/cuon-utils.js"></script>
+
+  <script src="Point.js"></script>
+  <script src="Triangle.js"></script>
+  <script src="Circle.js"></script>
+  <script src="Disk.js"></script>
+  <script src="Cube.js"></script>
+  <script src="Dog.js"></script>
+  <script src="Camera.js"></script>
+  <script src="World.js"></script>
+</body>
+
+</html>
